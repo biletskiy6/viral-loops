@@ -1,0 +1,111 @@
+.container
+  max-width: 1170px
+  margin: 0 auto
+  padding: 0 30px
+.section
+  padding-top: 50px
+  border-bottom: 1px solid #ccc
+  padding-bottom: 50px
+  overflow: hidden
+  &-intro
+    h2
+      position: relative
+      font-size: 38px
+      text-align: center
+      font-weight: 700
+      &::after
+        position: absolute
+        bottom: -10px
+        content: ''
+        left: 50%
+        transform: translateX(-50%)
+        width: 45px
+        height: 1px
+        background-color: #f71568
+    h4
+      font-size: 14px
+      letter-spacing: 2px
+      text-transform: uppercase
+      color: #333
+      text-align: center
+      margin-bottom: 10px
+    &-items
+  &-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &--reversed
+      flex-direction: row-reverse
+    &__content, &__image
+      flex: 1
+    &__content
+      max-width: 80%
+      h3
+        font-size: 36px
+        margin-bottom: 10px
+        color: #191b1d
+
+    &__image
+      img
+        display: block
+        margin: 0 auto
+        width: 330px
+
+.section-dot
+  &::before
+    content: '.'
+    color: #f71568
+
+.brands-items
+  margin-top: 50px
+.brand
+  &-item
+    img
+      display: block
+      width: 144px
+      margin: 0 auto
+
+.widgets
+  &-container
+    position: relative
+    display: flex
+    align-items: center
+    margin-top: 40px
+    height: 600px
+  &-content, &-image
+    flex: 1
+  &-image
+    img
+      position: absolute
+      top: 0
+      height: 640px
+      display: block
+.widgets-list
+  &__item
+    margin-bottom: 30px
+    max-width: 80%
+
+.widget
+  &-inner
+    display: flex
+    span
+      display: inline-block
+      width: 36px
+      height: 36px
+      line-height: 36px
+      background-color: transparent
+      border: 1px solid  #f71568
+      font-size: 22px
+      text-align: center
+      color: #f71568
+      border-radius: 50%
+      margin-right: 30px
+      flex: none
+  &-text
+    h4
+      margin-bottom: 10px
+      font-size: 13px
+      text-transform: uppercase
+      color: #191b1d
+    p
+      color: #6b6969

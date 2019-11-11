@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -14,19 +14,19 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <section class="section widgets">
+      <section class="section widgets inverse">
         <div class="container">
           <div class="section-content">
-            <div class="section-intro">
+            <div class="section-intro inverse">
               <h2>Powerful Widgets<span class="section-dot"></span></h2>
             </div>
             <div class="widgets-container">
               <div class="widgets-content">
-                <ul class="widgets-list">
+                <ul class="widgets-list inverse">
                   <li class="widgets-list__item">
                     <div class="widget-inner">
                       <span>1</span>
-                      <div class="widget-text">
+                      <div class="widget-text inverse">
                         <h4>Form Widget</h4>
                         <p> Visitors will use this widget to join your campaign and invite their friends. </p>
                       </div>
@@ -35,7 +35,7 @@
                   <li class="widgets-list__item">
                     <div class="widget-inner">
                       <span>2</span>
-                      <div class="widget-text">
+                      <div class="widget-text inverse">
                         <h4>Form Widget</h4>
                         <p> Visitors will use this widget to join your campaign and invite their friends. </p>
                       </div>
@@ -44,7 +44,7 @@
                   <li class="widgets-list__item">
                     <div class="widget-inner">
                       <span>3</span>
-                      <div class="widget-text">
+                      <div class="widget-text inverse">
                         <h4>Form Widget</h4>
                         <p> Visitors will use this widget to join your campaign and invite their friends. </p>
                       </div>
@@ -145,13 +145,43 @@
       $(".brands-items").slick(
       {
         slidesToShow: 6,
-        slidesToScroll: 6
+        slidesToScroll: 6,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings:
+            {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings:
+            {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings:
+            {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
 
     </script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script>
-    </script>
+    <script></script>
     <!-- END scripts -->
   </body>
 </html>
